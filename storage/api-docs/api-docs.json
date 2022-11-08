@@ -1,0 +1,44 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "Text Kledo",
+        "version": "0.1"
+    },
+    "paths": {
+        "/storeemployee": {
+            "post": {
+                "tags": [
+                    "Employee"
+                ],
+                "summary": "Store Employee Data",
+                "description": "Store Employee Data",
+                "operationId": "storeemployee",
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "query",
+                        "description": "nama karyawan",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    },
+                    {
+                        "name": "salary",
+                        "in": "query",
+                        "description": "Gaji",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "default": {
+                        "description": "successful operation"
+                    }
+                }
+            }
+        }
+    }
+}
